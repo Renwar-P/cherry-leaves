@@ -67,15 +67,30 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+
+### Hypothesis
+* Cherry leaves affected by powdery mildew exhibit distinguishable visual patterns compared to healthy cherry leaves.
+  
+### Validation
+
+* **Dataset Analysis**: Validate the hypothesis by conducting exploratory data analysis (EDA) on the dataset. Visualize samples of healthy and affected cherry leaves to identify any noticeable patterns or differences.
+* **Model Development**: Train a machine learning model using Convolutional Neural Networks (CNNs) to differentiate between healthy and powdery mildew-affected cherry leaves. Validate the model's accuracy and performance metrics using appropriate validation techniques.
+* **Evaluation**: Evaluate the model's performance on a separate test set to ensure its generalization ability. Calculate metrics such as accuracy to measure its effectiveness in identifying powdery mildew.  
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+### Business requirements
+* **Visual Differentiation**: Visualize cherry leaf images to differentiate healthy leaves from those affected by powdery mildew. This aids in understanding the distinct features, if any, present in affected leaves.
+* **Prediction**: Develop an ML model to predict whether a cherry leaf is healthy or has powdery mildew based on visual cues extracted from the images.
+### Rationale
 
+* **Data Visualization**: Visual exploration of the dataset helps in understanding the characteristics and variations present in healthy and affected cherry leaves. This aids in feature selection and extraction for model development.
+* **ML Tasks**: Using CNNs leverages the capability of deep learning to automatically learn and identify intricate patterns in images, enabling accurate classification between healthy and affected leaves.
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+
+* **Efficiency Improvement**: Implementing an ML system for instant detection of powdery mildew on cherry leaves reduces manual inspection time significantly, making the process more efficient.
+* **Scalability and Replicability**: Success in this project can pave the way for implementing similar ML-based detection systems for other crops, enhancing scalability and replicability across different agricultural scenarios.
 
 
 ## Dashboard Design
