@@ -94,8 +94,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+* **Leaf Visualizer**: This page computes healthy and mildew infected leaves. This helps the user to easier visualize the shape and differences between the leaves. It also computes a montage of leaves for the user to view.
+* **Mildew Detector**:
+* **ML Performance**
+* **Project Hypothesis**:
+* **Summary**: 
 
 
 ## Unfixed Bugs
@@ -117,7 +120,20 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+* **Streamlit**: Streamlit is a Python library used for creating web applications for data science and machine learning projects. It simplifies the process of turning data scripts into shareable web apps. In this project it was used as a dashboard.
+* **Jupyter**: Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. In this project it was used during the data collection and ML steps as a open IDE to better visualize the process.
+* **NumPy**: NumPy is a fundamental package for scientific computing in Python. It provides support for arrays, matrices, and a collection of mathematical functions to operate on these arrays, making it essential for numerical operations in Python. In this project it was used frequently during data preparation for example.
+* **Pandas**: Essential for data manipulation, cleaning, and analysis. Pandas facilitated tasks like loading datasets, cleaning data, performing exploratory data analysis (EDA), and organizing data for modeling.
+* **Seaborn**: Seaborn is used for creating visually appealing statistical visualizations. Seaborn aided in generating various plots and statistical graphics to visualize patterns or relationships within the data.
+* **Matplotlib**: Is used alongside Seaborn for creating customizable and publication-quality plots and visualizations, providing fine-grained control over visual elements in graphical representations.
+* **PIL (Python Imaging Library)**: Is used for handling image data within the project, including tasks such as image preprocessing, loading, saving, or basic image manipulation in the mildew detector page on streamlit.
+* **base64**: Is used for encoding and decoding binary image data in data_management.py file.
+* **joblib**: Is used for caching or parallel execution of specific functions, especially in machine learning tasks that involve repeated computations or grid searches for hyperparameter tuning. The joblib library is being used for loading Pickle (.pkl) files via the load_pkl_file function.
+* **datetime**: Is used for managing timestamps, handling date-related computations, or parsing dates and times especially in scenarios involving time-series data or logging. In this project it was used to generate a timestamp in a specific format, which is then incorporated into the filename while creating a downloadable report.
+* **itertools**:itertools is a module in Python's standard library that provides various tools for creating and working with iterators efficiently. The itertools library is used within the image_montage function to generate the combinations of row and column indices for plotting images in a grid-like layout.
+* **TensorFlow**: Tensroflow is an open-source machine learning framework developed by Google that is widely used for building and training machine learning models. It was used in this project in the ML process when training the model.
+* **random**: The random library is utilized within the image_montage function to randomly sample images when the number of images in a directory exceeds the available grid spaces for the montage.
+* **os**: Is used for handling file paths. 
 
 
 ## Credits 
