@@ -94,15 +94,79 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Dashboard Design
-* **Leaf Visualizer**: This page computes healthy and mildew infected leaves. This helps the user to easier visualize the shape and differences between the leaves. It also computes a montage of leaves for the user to view.
-* **Mildew Detector**:
-* **ML Performance**
-* **Project Hypothesis**:
-* **Summary**: 
+* ### **Project Summary**:
+* Provides a detailed overview of powdery mildew, a fungal disease affecting cherry trees, including its characteristics, impact, and management strategies.
+* Describes powdery mildew as a fungal disease affecting various plants, particularly cherry trees, thriving in warm, humid conditions.
+* Explains its appearance as a powdery, white growth on leaves, shoots, and occasionally on the fruit.
+* Specifies that the dataset is sourced from Kaggle.
+* Indicates that the dataset showcases both healthy cherry leaves and leaves affected by powdery mildew.
+* Encourages readers to visit and read the Project README file for further information.
+* Highlights the project's two primary business requirements:
+* 1. Conducting a study to visually differentiate between healthy cherry leaves and those infected with powdery mildew.
+* 2. Developing a predictive capability to determine if a cherry leaf is healthy or infected with powdery mildew.
 
+* #### **Dataset Information**:
+* Sourced from Kaggle.
+* Contains over 4,000 images captured from the client's crop fields.
+* Displays both healthy cherry leaves and leaves affected by powdery mildew.
+* Encourages users to explore and read the README file for a deeper understanding.
+
+* #### **Business Requirements:**
+* 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+* ### **Project Hypothesis:**
+* Cherry leaves affected by powdery mildew exhibit distinguishable visual patterns, especially along the leaf edges, setting them apart from healthy leaves.
+* Emphasizes the identification of these distinct patterns on the leaf edges.
+* Proposes the validation process through exploratory data analysis (EDA) on the dataset.
+* Aims to visualize samples of healthy and affected cherry leaves to discern any noticeable patterns or differences.
+
+
+* ### **Leaf Visualizer**: 
+* This page computes healthy and mildew infected leaves. This helps the user to easier visualize the shape and differences between the leaves. It also computes a montage of leaves for the user to view.
+* ####  **Visual Comparison:**
+* Noticeable differences between average and variability images are observed.
+* Shapes are recognizable in both mildew-infected and healthy leaves.
+* Distinct color differences between healthy and mildew-infected leaves are noticeable.
+* Healthy leaves exhibit a greener appearance.
+* Users can refresh the montage by clicking the 'Create Montage' button.
+* Allows selection of labels for viewing different subsets of images.
+* Displays a grid of randomly selected images based on the chosen label.
+* Adjusts the number of rows and columns to create montages with specific sizes.
+
+
+* ### **Mildew Detection**:
+* The client's objective is to determine whether a given leaf is infected with mildew.
+
+* #### **Live Prediction and Data Download:**
+* Allows users to upload mildew-infected leaf samples for live prediction.
+* Provides the option to download a set of mildew-infected and healthy leaf images from Kaggle.
+
+* #### **Live Prediction Functionality:**
+* Users can upload one or multiple leaf images for analysis.
+* Displays details about the uploaded image(s) like name and size.
+* Resizes the uploaded image(s) for input into the prediction model (resize_input_image function).
+* Uses a pre-trained model to predict the probability and class of mildew infection (load_model_and_predict function).
+* Visualizes predictions and their probabilities (plot_predictions_probabilities function).
+
+* #### **Analysis Report:**
+* Generates an analysis report table displaying the uploaded image names and their corresponding prediction results.
+* Provides an option to download the analysis report as a CSV file.
+
+
+* ### **ML Performance**
+
+* #### **Train, Validation, and Test Set Labels Frequencies:**
+* Displays an image depicting the distribution of labels across train, validation, and test sets.
+* #### **Model History:**
+* Visualizes the model's training accuracy and losses over time.
+* Includes separate images for the model's training accuracy (model_training_acc.png) and training losses (model_training_losses.png).
+* #### **Generalized Performance on Test Set:**
+* Presents a tabulated view of the model's evaluation metrics on the test set.
+* Loads and displays the evaluation results for loss and accuracy obtained from the load_test_evaluation function. 
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
 
 ## Deployment
 ### Heroku

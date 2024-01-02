@@ -40,7 +40,7 @@ def page_leaf_visualizer_body():
 
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
-      my_data_dir = '/workspaces/cherry-leaves/inputs/cherry-leaves'
+      my_data_dir = 'inputs\cherry-leaves'
       labels = os.listdir(my_data_dir+ '/validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
       if st.button("Create Montage"):      
@@ -51,7 +51,7 @@ def page_leaf_visualizer_body():
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     sns.set_style("white")
-    label_path = os.path.join('/workspaces/cherry-leaves/inputs/cherry-leaves', 'validation', label_to_display)
+    label_path = os.path.join('inputs\cherry-leaves', 'validation', label_to_display)
     if os.path.exists(label_path):
         images_list = os.listdir(label_path)
         if nrows * ncols < len(images_list):
