@@ -3,6 +3,7 @@ jupyter_notebooks
 outputs\v1
 outputs\v5
 outputs\v7
-cherry-leaves\inputs\cherry-leaves\test
-cherry-leaves\inputs\cherry-leaves\train
+cherry-leaves\inputs\cherry-leaves\test\
+cherry-leaves\inputs\cherry-leaves\train\
 .devcontainer
+*.ipynb
