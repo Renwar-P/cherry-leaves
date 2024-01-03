@@ -8,5 +8,5 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
-cherry-leaves\inputs\cherry-leaves\test\
-cherry-leaves\inputs\cherry-leaves\train\
+cherry-leaves/inputs/cherry-leaves/test/
+cherry-leaves/inputs/cherry-leaves/train/
