@@ -50,6 +50,12 @@ To log into the Heroku toolbelt CLI:
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 
+
+# Cherry Leaves
+
+* Mildew, commonly known as powdery mildew, is a fungal disease that affects various plants, including cherry trees. It thrives in warm, humid conditions and appears as a powdery, white growth on the leaves, shoots, and sometimes the fruit of trees. This fungal infection typically begins in early summer, spreading through spores carried by wind or water, causing leaf distortion, premature leaf drop, and weakening the tree's overall health. Cherry trees, susceptible to powdery mildew, can suffer reduced photosynthesis and fruit quality when infected, affecting their growth and productivity. Regular pruning, proper air circulation, and fungicidal treatments can help prevent and manage mildew infestations in cherry trees.
+
+
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
@@ -164,8 +170,23 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Presents a tabulated view of the model's evaluation metrics on the test set.
 * Loads and displays the evaluation results for loss and accuracy obtained from the load_test_evaluation function. 
 
-## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
+
+* ## **Bugs**
+* During the development of this project several issues occured. Here are some of them. 
+* **Jupyter Notebooks:**
+* During the development of the notebooks my system seemed to be struggling the most. I believe thats because of issues with the recommended IDE. When going through the steps my system got disconnected multiple times. This explains the versioning in the notebooks. The steps had to be done multiple times for me to get a version I felt satisfied with. Especially the last notebook which my IDE seemed to be struggling with the most. In the end to resolve the issues I had been having I switched the IDE in order to finish the project.   
+
+* **Streamlit Dashboard:**
+* During the development of the dashboard I had several issues. The first ones had to do with library dependencies. Either it was tensorflow that was not compatible or it was numpy. To resolve this I checked the versions installed and tried to search for versions that are compatible. I updated the versions trying to find versions that worked. In the end I found that the version of numpy in the requirement.txt file and a updated tensorflow resolved the issue. 
+
+* In the mildew_detector.py page I encountered several issues. When feeding images to the feature it came back with the wrong prediction. At first I wondered about my ML model and the outcome. Perhaps I had saved a underperforming model or interpret the results wrong. But the model predicted the result wrong with such accuracy that it made me sure it had to be a wiring issue in the predictive_analysis.py file. Sure enough it was the index positions that I had entered wrong. When fixed the detector model worked perfectly. 
+
+* On the mildew_detector.py page in my dashboard there is a download feature in the end. When trying to perform this task I got error message about the append attribute. The feature did not recognize append. When googling the issue I found the answer on stackoverflow. It seemed that the new version of pandas requires the append feature to have a _ in front. So I changed append to _append and it worked perfectly after that.  
+
+
+###  Unfixed Bugs
+* The project has no unfixed bugs. 
 
 
 ## Deployment
@@ -198,25 +219,19 @@ To save time in this process, the IT team suggested an ML system that detects in
 * **TensorFlow**: Tensroflow is an open-source machine learning framework developed by Google that is widely used for building and training machine learning models. It was used in this project in the ML process when training the model.
 * **random**: The random library is utilized within the image_montage function to randomly sample images when the number of images in a directory exceeds the available grid spaces for the montage.
 * **os**: Is used for handling file paths. 
+* **sys**: The sys.path.append() function in Python is used to add a specific directory to the Python system path at runtime. sys.path.append(r'C:\Users\renwa\OneDrive\Desktop\Django3blog\cherry-leaves'): This line appends the specified directory (C:\Users\renwa\OneDrive\Desktop\Django3blog\cherry-leaves) to the Python system path.
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* All the code used in this project is from the Malaria Detector walkthrough video series provided in the course material. To complete the notebooks and dashboard I followed along the video series. Changes in the code has been made to accomodate my project. The template used to start the project is the one provided in the course material. 
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The text in the project summary page is inspired by 
+- https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/#:~:text=Powdery%20mildew%20of%20sweet%20and,1.
+- https://www.lawnstarter.com/blog/tree-care/cherry-tree-diseases-how-treat/#4-5-powdery-mildew
+- https://en.wikipedia.org/wiki/Powdery_mildew
 
-### Media
+ - The information regarding used libraries in this project are inspired by the libraries own homepages and Wikipedia. Example: https://en.wikipedia.org/wiki/Pandas_(software)#Indices
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
-
-
-## Acknowledgements (optional)
-* Thank the people that provided support throughout this project.
