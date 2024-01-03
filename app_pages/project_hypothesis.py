@@ -13,4 +13,3 @@ def page_project_hypothesis_body():
         f"Visualize samples of healthy and affected cherry leaves to identify any noticeable patterns or differences</span>"
     )
 
-page_project_hypothesis_body()        
