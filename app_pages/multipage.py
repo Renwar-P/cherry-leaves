@@ -20,4 +20,5 @@ class MultiPage:
         page = st.sidebar.radio('Menu', self.pages, format_func=lambda page: page['title'])
         page['function']()
 
-MultiPage() 
+
+
