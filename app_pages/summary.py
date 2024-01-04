@@ -11,8 +11,8 @@ def page_summary_body():
     f"* Mildew, commonly known as powdery mildew, is a fungal disease that affects various plants, including cherry trees.\n"
     f"* It thrives in warm, humid conditions and appears as a powdery, white growth on the leaves, shoots, "
     f" and sometimes the fruit of trees. This fungal infection typically begins in early summer,\n"
-    f"* spreading through spores carried by wind or water, causing leaf distortion, premature leaf drop, and weakening the tree's overall health. "
-    f"Cherry trees, susceptible to powdery mildew, can suffer reduced photosynthesis and fruit quality when infected, "
+    f" spreading through spores carried by wind or water, causing leaf distortion, premature leaf drop, and weakening the tree's overall health. "
+    f"* Cherry trees, susceptible to powdery mildew, can suffer reduced photosynthesis and fruit quality when infected, "
     f"affecting their growth and productivity. Regular pruning, proper air circulation, "
     f"and fungicidal treatments can help prevent and manage mildew infestations in cherry trees.\n\n"
     f"**Project Dataset**\n"
@@ -33,4 +33,3 @@ def page_summary_body():
         )
 
 
-page_summary_body()
