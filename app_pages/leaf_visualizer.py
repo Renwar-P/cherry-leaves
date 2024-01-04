@@ -41,7 +41,7 @@ def page_leaf_visualizer_body():
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
       my_data_dir = '\cherry-leaves\inputs\cherry-leaves'
-      labels = os.listdir(my_data_dir, 'validation')
+      labels = os.listdir('inputs\cherry-leaves\validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
       if st.button("Create Montage"):      
             image_montage(dir_path=my_data_dir + 'validation',
