@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly.express as px
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from PIL import Image
 from src.data_management import load_pkl_file
@@ -50,7 +49,7 @@ def load_model_and_predict(my_image, version):
     Load and perform ML prediction over live images
     """
 
-    model = tf.keras.models.load_model(f"outputs/{version}/cherry-leaves-model-h1")
+    model = load_model(f"outputs/{version}/cherry-leaves-model-h1")
 
     pred_proba = model.predict(my_image)[0, 0]
 
