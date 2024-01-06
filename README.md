@@ -3,7 +3,7 @@
 
 * Mildew, commonly known as powdery mildew, is a fungal disease that affects various plants, including cherry trees. It thrives in warm, humid conditions and appears as a powdery, white growth on the leaves, shoots, and sometimes the fruit of trees. This fungal infection typically begins in early summer, spreading through spores carried by wind or water, causing leaf distortion, premature leaf drop, and weakening the tree's overall health. Cherry trees, susceptible to powdery mildew, can suffer reduced photosynthesis and fruit quality when infected, affecting their growth and productivity. Regular pruning, proper air circulation, and fungicidal treatments can help prevent and manage mildew infestations in cherry trees.
 
-* The goal was to create a ML model that can predict if a cherry leaf is infected with mildew. It had to have a accuracy rate of minimum 97%. My model reached a accyúracy rate above 99%. 
+* The goal was to create a ML model that can predict if a cherry leaf is infected with mildew. It had to have a accuracy rate of minimum 97%. My model reached a accuracy rate above 99%. 
 
 
 ## Dataset Content
@@ -58,8 +58,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Indicates that the dataset showcases both healthy cherry leaves and leaves affected by powdery mildew.
 * Encourages readers to visit and read the Project README file for further information.
 * Highlights the project's two primary business requirements:
-* 1. Conducting a study to visually differentiate between healthy cherry leaves and those infected with powdery mildew.
-* 2. Developing a predictive capability to determine if a cherry leaf is healthy or infected with powdery mildew.
+* 1 - Conducting a study to visually differentiate between healthy cherry leaves and those infected with powdery mildew.
+* 2 - Developing a predictive capability to determine if a cherry leaf is healthy or infected with powdery mildew.
 
 * #### **Dataset Information**:
 * Sourced from Kaggle.
@@ -134,15 +134,21 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 * On the mildew_detector.py page in my dashboard there is a download feature in the end. When trying to perform this task I got error message about the append attribute. The feature did not recognize append. When googling the issue I found the answer on stackoverflow. It seemed that the new version of pandas requires the append feature to have a _ in front. So I changed append to _append and it worked perfectly after that.  
 
+* **Heroku:**
+* During the deployment to I encountered several issues. My app deployed on streamlit worked as expected however when deployed to Heroku I ran into dependency issues. It could not find the load_model created with tensorflow. After upgrading/downgrading my tensorflow packages I still couldn´t solve the issue. Because I had been forced to change IDE during development dependency issues had arrived. So to solve this I ran the jupyter notebooks again from the beginning in one push on Gitpod. I saved it and pushed it to a new branch and it worked as expected after that. 
 
 ###  Unfixed Bugs
 * The project has no unfixed bugs. 
+
+## Testing
+
+* Only manual testing has been done in this project. All the features of the app has been tested on Heroku and they work accordingly. 
 
 
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://cherry-leaves-mildew-504c43039ad3.herokuapp.com/ 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -169,7 +175,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 * **TensorFlow**: Tensroflow is an open-source machine learning framework developed by Google that is widely used for building and training machine learning models. It was used in this project in the ML process when training the model.
 * **random**: The random library is utilized within the image_montage function to randomly sample images when the number of images in a directory exceeds the available grid spaces for the montage.
 * **os**: Is used for handling file paths. 
-* **sys**: The sys.path.append() function in Python is used to add a specific directory to the Python system path at runtime. sys.path.append(r'C:\Users\renwa\OneDrive\Desktop\Django3blog\cherry-leaves'): This line appends the specified directory (C:\Users\renwa\OneDrive\Desktop\Django3blog\cherry-leaves) to the Python system path.
+
 
 
 ## Credits 
