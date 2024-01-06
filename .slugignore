@@ -1,8 +1,8 @@
 
-jupyter_notebooks/
-outputs/v1/
-outputs/v5/
-outputs/v7/
-cherry-leaves/inputs/cherry-leaves/test/
-cherry-leaves/inputs/cherry-leaves/train/
+workspace/cherry-leaves/jupyter_notebooks
+outputs/3/
+outputs/2/
+outputs/4/
+workspace/cherry-leaves/inputs/cherry-leaves/test
+workspace/cherry-leaves/inputs/cherry-leaves/train
 *.ipynb
